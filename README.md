@@ -21,6 +21,11 @@ npm i --save-dev @types/express
 # 6. Install ts-node-dev (for running TS server)
 npm i ts-node-dev
 
+or
+
+npm i -D tsx
+package.json: "npx tsx ./src/server.ts"
+
 # 7. Install dotenv (for environment variables)
 npm i dotenv
 ```
