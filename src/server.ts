@@ -3,6 +3,7 @@ import dotenv from "dotenv";
 import path from "path";
 import { Pool } from "pg";
 import userRoutes from "./routes/users.routes";
+import todoRoutes from "./routes/todo.routes";
 
 dotenv.config({ path: path.join(process.cwd(), ".env") });
 
@@ -47,6 +48,7 @@ initDB();
 
 //* Routes
 app.use("/api", userRoutes);
+app.use("/api", todoRoutes);
 
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
