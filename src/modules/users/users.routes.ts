@@ -5,7 +5,9 @@ import {
   getUserController,
   updateUserController,
   deleteUserController,
-} from "../controller/users.controller";
+} from "./users.controller";
+
+//* routes (path/map handle) -> controller (req and res handle) -> service (db and extra anther business login )
 
 const router = express.Router();
 

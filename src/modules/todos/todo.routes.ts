@@ -5,7 +5,7 @@ import {
   GetTodo,
   GetTodos,
   UpdateTodo,
-} from "../controller/todo.controller";
+} from "./todo.controller";
 
 const router = express.Router();
 router.post("/todos", CreateTodo);
